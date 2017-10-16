@@ -4,78 +4,98 @@ body{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    direction: rtl;
+    font-family: 'Secular One', sans-serif;
 }
 
-.container-fluid{
-    //margin-top: 150px;
-    padding: 0 2rem;
+main{
+    background-color: #fff; 
+    margin: auto;
+    width: 90%;
+    border-radius: 3px;
+    margin-top: 5rem;
 }
-form{
-    background-color: #fff;
-    margin-top: 150px;
-    padding: 8rem 2rem 2rem 2rem;
-    padding-right: 0;
-    padding-left: 0;
-    border-radius: 2px;
-    text-align: center;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border-radius: 3px 3px 0 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+header #header_logo{
+    width: 200px;   
     position: relative;
 }
 
-#logo{
-    width: 150px;
-    height: 150px;
+header #header_logo #logo{
+    width: 160px;
+    height: 160px;
     background-color: #393939;
-    border-radius: 50%;
-    box-shadow: 2px 2px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
+    bottom: -100%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    top: -50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;
 }
 
-#logo img{
+header #header_logo #logo img{
     width: 60%;
 }
 
-input{
-    width: 80%;
-    margin-bottom: 0.5rem;
-    background-color: #f0f0f0;
-    border: none;
-    height: 35px;
-    border-radius: 3px;
-    direction: rtl;
-    padding: 0 1rem;
-}
-
-@font-face {
-    font-family: EmojiSymbols;
-    src: url(../font/EmojiSymbols-Regular-37883244862ada81e50a5c43f090ab5b696a4d27c5e66d321546a1638bb1e682.woff);
-}
-
-input[type=submit]{
-    background-color: #41cadc;
-    height: 45px;
-    font-family: "Times", "Times New Roman", "serif", "sans-serif", "EmojiSymbols";
-    color: #fff;
-    font-size: 2rem;
+button{
     cursor: pointer;
 }
 
-::-webkit-input-placeholder {
-    color: #c3c3c3;
+button:hover{
+    background-color: #929292;
+    color: #efefef;
 }
-:-moz-placeholder {
-    color: #c3c3c3;
+header button{
+    width: 45%;
+    color: #fff;
+    background-color: #d1d1d1;
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-family: 'Secular One', sans-serif;
 }
-::-moz-placeholder {
-    color: #c3c3c3;
+
+header .selected{
+    background-color: #41cadc;
 }
-::-ms-input-placeholder {
-    color: #c3c3c3;
+
+nav{
+    width: 25%;
+    background-color: #dedede;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+nav button{
+    display: block;
+    background-color: #efefef;
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    color: #929292;
+    font-size: 1.5rem;    
+    font-family: 'Secular One', sans-serif;
+}
+
+nav .selected{
+    background-color: #41cadc;
+    color: #fff;
+    width: 120%;
 }
