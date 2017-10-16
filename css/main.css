@@ -1,12 +1,11 @@
 body{
     background-image: url(../img/background.jpg);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
     direction: rtl;
-    font-family: 'Secular One', sans-serif;
 }
 
 main{
@@ -15,6 +14,7 @@ main{
     width: 90%;
     border-radius: 3px;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 header{
@@ -51,8 +51,18 @@ header #header_logo #logo img{
     width: 60%;
 }
 
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSansHebrew-Bold.ttf);
+}
+
+button, h1, h2, h3, h4, h5{
+    font-family: OpenSans, sans-serif;
+}
+
 button{
     cursor: pointer;
+    font-weight: 700;
 }
 
 button:hover{
@@ -66,12 +76,16 @@ header button{
     border: none;
     border-radius: 2px;
     height: 40px;
-    font-size: 1.5rem;
-    font-family: 'Secular One', sans-serif;
+    font-size: 1rem;
 }
 
 header .selected{
     background-color: #41cadc;
+}
+
+#container{
+    display: flex;
+    justify-content: space-between;
 }
 
 nav{
@@ -79,6 +93,7 @@ nav{
     background-color: #dedede;
     padding: 2rem;
     box-sizing: border-box;
+    border-radius: 0 0 3px 0;
 }
 
 nav button{
@@ -90,12 +105,57 @@ nav button{
     margin-bottom: 1rem;
     border-radius: 3px;
     color: #929292;
-    font-size: 1.5rem;    
-    font-family: 'Secular One', sans-serif;
+    font-size: 1.5rem;  
+    position: relative;
 }
 
 nav .selected{
     background-color: #41cadc;
     color: #fff;
     width: 120%;
+}
+
+@font-face {
+    font-family: EmojiSymbols;
+    src: url(../font/EmojiSymbols-Regular-37883244862ada81e50a5c43f090ab5b696a4d27c5e66d321546a1638bb1e682.woff);
+}
+
+.unchecked{
+    display: none;
+}
+.checked{
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 18px;
+    height: 18px;
+    background-color: #16d20d;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: EmojiSymbols;
+}
+
+#orders{
+    padding: 2rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+}
+
+.order{
+    width: 27%;
+    margin: 1.5rem;
+    height: 120px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    box-sizing: border-box;    
+}
+
+h5{
+    margin-top: 0;
 }

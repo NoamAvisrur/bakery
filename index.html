@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
-        <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Assistant:400,600,700,800&subset=hebrew" rel="stylesheet">
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body> 
@@ -19,19 +19,29 @@
                 </div>
                 <button>תצוגה על פי מוצרים</button>
             </header>
-            
-            <nav>
-                <button>המידרחוב</button>
-                <button>דלישס</button>
-                <button>חוות צוק</button>
-                <button class="selected">לייקר בייקרי</button>
-                <button>דליקטס</button>
-                <button>קפה גו</button>
-                <button>אנגלינה</button>
-            </nav>
-            <div id="orders">
-                
-            </div>
+            <div id="container">
+                <nav>
+                    <button><span class="checked">&#10004;</span>המידרחוב</button>
+                    <button><span class="unchecked">&#10004;</span>דלישס</button>
+                    <button><span class="checked">&#10004;</span>חוות צוק</button>
+                    <button class="selected"><span class="unchecked">&#10004;</span>לייקר בייקרי</button>
+                    <button><span class="unchecked">&#10004;</span>דליקטס</button>
+                    <button><span class="unchecked">&#10004;</span>קפה גו</button>
+                    <button><span class="checked">&#10004;</span>אנגלינה</button>
+                </nav>
+                <div id="orders">
+                    <div class="order">
+                        <h5>קוראסון שקדים אפוי</h5>
+                    </div>
+                    <div class="order"></div>
+                    <div class="order"></div>
+                    <div class="order"></div>
+                    <div class="order"></div>
+                    <div class="order"></div>
+                    <div class="order"></div>
+                    <div class="order"></div>                    
+                </div>
+            </div>    
         </main>    
     </body>
 </html>
